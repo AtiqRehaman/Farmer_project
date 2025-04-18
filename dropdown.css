@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-image: url('Website-Background.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.menubar {
+	text-align: center;
+	background: gray;
+	display: block;
+}
+
+.menubar ul {
+	display: inline-flex;
+	list-style: none;
+	padding: 0;
+}
+
+.menubar ul li {
+	padding: 30px 50px;
+	font-weight: bold;
+	position: relative; /* Required for submenu positioning */
+}
+
+.menubar a {
+	text-decoration: none;
+	color: white;
+	padding: 12px 30px;
+	display: block;
+}
+
+.menubar a:hover {
+	color: lightgray;
+}
+
+/* Dropdown Styles */
+.submenu {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	background-color: white;
+	min-width: 160px;
+	border: 1px solid gray;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submenu li {
+	padding: 10px;
+	text-align: left;
+	display: block;
+}
+
+.submenu li a {
+	color: black;
+	padding: 8px 12px;
+	display: block;
+}
+
+.submenu li a:hover {
+	background-color: lightgray;
+}
+
+/* Show dropdown on hover */
+.menubar ul li:hover .submenu {
+	display: block;
+}

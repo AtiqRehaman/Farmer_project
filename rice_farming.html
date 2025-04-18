@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Farming Process</title>
+    <style>
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            outline: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: .2s linear;
+        }
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
+        .step img {
+            width: 50%;
+            border-radius: 10px;
+        }
+        .step .content {
+            width: 50%;
+        }
+        .step h2 {
+            color: #444;
+            margin-bottom: 10px;
+        }
+        .step p {
+            color: #777;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .step {
+                flex-direction: column;
+            }
+            .step img, .step .content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rice Farming Process</h1>
+
+        <!-- Step 1 -->
+        <div class="step">
+            <img src="fields.webp" alt="Rice Field Preparation">
+            <div class="content">
+                <h2>Step 1: Land Preparation</h2>
+                <p>
+                    The land is plowed and leveled to ensure proper water management. Organic or chemical fertilizers are added to enrich the soil.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+            <img src="seed_sowing.jpg" alt="Seed Sowing">
+            <div class="content">
+                <h2>Step 2: Seed Selection and Sowing</h2>
+                <p>
+                    High-quality seeds are selected for planting. Seeds are either directly sown or transplanted from nurseries.
+                </p>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+            <img src="water_management.jpg" alt="Water Management">
+            <div class="content">
+                <h2>Step 3: Water Management</h2>
+                <p>
+                    Rice requires a lot of water, so fields are flooded with water. Proper irrigation systems are maintained to ensure consistent water supply.
+                </p>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Step 4: Weed and Pest Control</h2>
+            <p>Weeds are removed manually or with herbicides. Pests are controlled using natural predators or pesticides.</p>
+            <img src="chemical_control.jpg" alt="Weed Control">
+        </div>
+
+        <div class="step">
+            <h2>Step 5: Harvesting</h2>
+            <p>Rice is harvested when the grains are mature and golden. Harvesting is done manually or with machines.</p>
+            <img src="cultural_control.jpg" alt="Harvesting">
+        </div>
+
+        <div class="step">
+            <h2>Step 6: Post-Harvest Processing</h2>
+            <p>The harvested rice is threshed to separate the grains from the stalks. Grains are dried, milled, and polished before packaging.</p>
+            <img src="farmers_in_field.jpg" alt="Post-Harvest Processing">
+        </div>
+    </div>
+</body>
+</html>

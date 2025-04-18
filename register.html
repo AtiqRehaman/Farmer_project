@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: url('farm_img.avif') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .registration-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+        .registration-container h2 {
+            margin-bottom: 20px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <input type="text" id="username" class="input-field" placeholder="User  name" required>
+            <input type="text" id="aadhar" class="input-field" placeholder="Aadhar" required>
+            <input type="email" id="email" class="input-field" placeholder="Email">
+            <input type="password" id="password" class="input-field" placeholder="Password" required>
+            <input type="password" id="confirmPassword" class="input-field" placeholder="Confirm Password" required>
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            let isValid = true;
+            let username = document.getElementById('username').value;
+            let aadhar = document.getElementById('aadhar').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (username.length < 6) {
+                alert('Username must be at least 6 characters long.');
+                isValid = false;
+                return;
+            }
+
+
+            const aadharPattern = /^\d{12}$/; 
+            if (!aadharPattern.test(aadhar)) {
+                alert('Aadhar number must be exactly 12 digits.');
+                isValid = false;
+                return;
+            }
+
+            // Email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+            if (email && !emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                isValid = false;
+                return;
+            }
+
+            // Password validation
+            const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters long.');
+                isValid = false;
+                return;
+            } else if (!passwordPattern.test(password)) {
+                alert('Password must include at least one uppercase letter, lowercase letter, digit, and special character.');
+                isValid = false;
+                return;
+            }
+
+            // Confirm Password validation
+            if (password !== confirmPassword) {
+                alert('Passwords do not match.');
+                isValid = false;
+                return;
+            }
+
+            if (isValid) {
+                alert('Registration successful!');
+            }
+        });
+    </script>
+</body>
+</html>

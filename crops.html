@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crops - Farmer Friend</title>
+	<style>
+	*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear ;
+}
+body{
+    background-image: url("fields.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    /*background:linear-gradient(45deg,blueviolet,lightgreen);*/
+    padding: 15px 9%;
+    padding-bottom: 100px;
+
+}
+.container  .heading{
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+.container .boxcontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(256px,1fr));
+    gap: 20px;
+}
+.container .boxcontainer .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center; 
+    padding: 30px 20px;
+
+}
+.container .boxcontainer .box img{
+    border-radius: 50%;
+    
+}
+.container .boxcontainer .box h3{
+color: #444;
+font-size: 22px;
+padding: 10px 0;
+
+
+}
+.container .boxcontainer .box {
+color: #777;
+font-size: 15px;
+padding: 10px 0;
+line-height: 1.5;
+}
+.container .boxcontainer .box .btn
+ {
+color: #fff;
+margin-top: 10px;
+display: inline-block;
+background: #333;
+font-size: 17px;
+border-radius: 5px;
+padding: 8px 25px;
+}
+.container .boxcontainer .box .btn:hover
+{
+    letter-spacing: 1px;
+
+}
+.container .boxcontainer .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.07);
+}
+
+	</style>
+</head>
+<body>
+    <div class="container">
+ <h1 class="heading">Crops</h1>
+ <div class="boxcontainer">
+    <div class="box">
+        <img src="rice.jpg" alt="" height="150px" width="250px">
+        <h3>Rice</h3>
+        <p>Rice is a staple food for more than half of the world\'s population. It is the seed of the grass species Oryza sativa or Oryza glaberrima.</p>
+         <a href="rice_farming.html" class="btn">read more</a>
+    </div>
+    
+    <div class="box">
+        <img src="wheat.jpg" alt="" height="150px" width="250px">
+        <h3>Wheat</h3>
+        <p>Wheat is a cereal grain grown from the species Triticum aestivum, commonly used as food and a key ingredient in bread making.</p>
+         <a href="#" class="btn">read more</a>
+    </div>
+
+    <div class="box">
+        <img src="corn.webp" alt="" height="150px" width="250px">
+        <h3>Corn</h3>
+        <p>Corn, also known as maize, is a cereal plant first domesticated by indigenous peoples in southern Mexico. It is a staple crop used in various products." </p>
+         <a href="#" class="btn">read more</a>
+    </div>
+         <div class="box">
+         <img src="potato.jpg" alt="" height="150px" width="250px">
+         <h3>Potato</h3>
+         <p>"Potato is a starchy tuber of the plant Solanum tuberosum. It is widely consumed as a vegetable and used in various dishes worldwide."</p>
+          <a href="#" class="btn">read more</a>
+     </div>
+          <div class="box">
+        <img src="tomato.jpg" alt=""  height="150px" width="250px">
+        <h3>Tomato</h3>
+        <p>The tomato, Solanum lycopersicum, is a plant whose fruit is an edible berry that is eaten as a vegetable. 
+		The tomato is a member of the nightshade family that includes tobacco, potato, and chili peppers."</p>
+         <a href="#" class="btn">read more</a>
+    </div>
+    <div class="box">
+        <img src="Chilli.jpeg" alt=""  height="150px" width="250px">
+        <h3>Chilli</h3>
+        <p>"Chili peppers, also spelled chile or chilli , 
+		are varieties of berry-fruit plants from the genus Capsicum, which are members of the nightshade family Solanaceae, cultivated for their pungency." </p>
+         <a href="#" class="btn">read more</a>
+    </div>
+    <div class="box">
+        <img src="greengram.jpg" alt=""  height="150px" width="250px">
+        <h3>Green Gram</h3>
+        <p>The green gram (Vigna radiata) is a plant species in the legume family. 
+		The mung bean is mainly cultivated in East, Southeast, and South Asia. It is used as an ingredient in both savoury and sweet dishes.</p>
+         <a href="#" class="btn">read more</a>
+    </div>
+    <div class="box">
+        <img src="cotton.jpg" alt=""  height="150px" width="250px">
+        <h3>Cotton</h3>
+        <p>Cotton (from Arabic qutn), first recorded in ancient India, is a soft, fluffy staple fiber that grows in a boll,
+		or protective case, around the seeds of the cotton plants of the genus Gossypium in the mallow family Malvaceae.</p>
+         <a href="#" class="btn">read more</a>
+    </div>
+ </div>
+</div>
+
+    
+</body>
+</html>

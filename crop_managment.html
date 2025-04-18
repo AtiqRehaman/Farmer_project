@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Management</title>
+    <style>
+        body {
+            background-image: url("crop_managment.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            padding: 15px 9%;
+            padding-bottom: 100px;
+        }
+        .container .heading {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+            font-size: 50px;
+            background: linear-gradient(45deg, darkgreen, lightgreen);
+        }
+        .container .boxcontainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+            gap: 20px;
+        }
+        .container .boxcontainer .box {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+            border-radius: 5px;
+            background: #ffffffc0;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .container .boxcontainer .box img {
+            border-radius: 50%;
+            max-width: 100px; 
+            height: auto;
+        }
+        .container .boxcontainer .box h3 {
+            color: #444;
+            font-size: 22px;
+            padding: 10px 0;
+        }
+        .container .boxcontainer .box p {
+            color: #777;
+            font-size: 15px;
+            padding: 10px 0;
+            line-height: 1.5;
+        }
+        .container .boxcontainer .box .btn {
+            color: #fff;
+            margin-top: 10px;
+            display: inline-block;
+            background: #333;
+            font-size: 17px;
+            border-radius: 5px;
+            padding: 8px 25px;
+            text-decoration: none;
+        }
+        .container .boxcontainer .box .btn:hover {
+            letter-spacing: 1px;
+        }
+        .container .boxcontainer .box:hover {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+            transform: scale(1.07);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="heading">Crop Management Methods</div>
+        <div class="boxcontainer">
+            <div class="box">
+                <img src="Crop-Rotation.webp" alt="Crop Rotation" height="250px" width="250px">
+                <h3>Crop Rotation</h3>
+                <p>Crop rotation is the practice of growing different crops in the same area across a sequence of seasons. This method helps improve soil health and reduce pests.</p>
+                <a href="crop_rotation.html" class="btn">Learn More</a>
+            </div>
+
+            <div class="box">
+                <img src="wheat.jpg" alt="Cover Cropping" height="150px" width="250px">
+                <h3>Cover Cropping</h3>
+                <p>Cover cropping involves planting specific crops to cover the soil rather than for the purpose of being harvested. This method helps prevent soil erosion and improves soil fertility.</p>
+                <a href="https://example.com/cover-cropping" class="btn">Learn More</a>
+            </div>
+
+            <div class="box">
+                <img src="soil_preparation.jpg" alt="Integrated Pest Management" height="150px" width="250px">
+                <h3>Integrated Pest Management (IPM)</h3>
+                <p>Integrated Pest Management is an environmentally friendly approach to managing pests that combines biological, cultural, physical, and chemical tools.</p>
+                <a href="https://example.com/ipm" class="btn">Learn More</a>
+            </div>
+
+            <div class="box">
+                <img src="drone_irrigation.jpg" alt="Precision Agriculture" height="150px" width="250px">
+                <h3>Precision Agriculture</h3>
+                <p>Precision agriculture uses technology to monitor and manage field variability in crops. This method optimizes field-level management regarding crop farming</p>
+                <a href="https://example.com/ipm" class="btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
